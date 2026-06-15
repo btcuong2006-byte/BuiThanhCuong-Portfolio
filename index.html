@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuong Bui — Creative Developer</title>
+    <meta name="description" content="Sleek Apple-style minimalist developer portfolio of Cuong Bui, Creative Developer. Crafted with frosted glass and fluid animations.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+    <!-- Thư viện jQuery CDN để tối giản hóa code JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="light-mode">qư
+    <!-- Vòng tròn màu nền chuyển động mượt mà (Phong cách Liquid iOS) -->
+    <div class="fluid-bg-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+    
+    <!-- Lớp phủ kết cấu hạt giấy mờ (Hiệu ứng màn hình Apple tinh tế) -->
+    <div class="grain-overlay"></div>
+
+    <!-- Khung màn hình kính mờ chính -->
+    <div class="monitor-frame">
+        <!-- Thanh HUD Header của khung -->
+        <header class="hud-header">
+            <div class="hud-logo">
+                <span class="logo-icon-dot"></span>
+                <div class="logo-text">
+                    <span class="name">Cuong Bui</span>
+                    <span class="sys-tag">AETHER_OS_v3.0.2</span>
+                </div>
+            </div>
+            
+            <nav class="hud-nav">
+                <a href="#hero" class="nav-link active" data-target="hero">Overview</a>
+                <a href="#identity" class="nav-link" data-target="card-identity">Identity</a>
+                <a href="#process" class="nav-link" data-target="card-process">Process</a>
+                <a href="#tech" class="nav-link" data-target="card-tech">Skills</a>
+                <a href="#projects" class="nav-link" data-target="card-projects">Works</a>
+            </nav>
+
+            <div class="hud-meta">
+                <span class="meta-item loc-coords">LOC // 10.776N 106.700E</span>
+                <span class="meta-item live-time" id="live-time">15:48:28 GMT+7</span>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="toggle-icon">◐</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Không gian làm việc chính -->
+        <main class="workspace">
+            
+            <!-- Bố cục Hero chính -->
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <div class="tech-badge">CREATIVE DEVELOPER</div>
+                    <h1 class="hero-title">
+                        Code with <span class="highlight">soul.</span><br>
+                        Design for <span class="outline-text">everyone.</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Hi, I'm Cuong Bui. A Frontend Engineer specializing in high-performance web applications, fluid micro-interactions, and premium glassmorphic user interfaces.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="document.querySelector('[data-target=\'card-identity\']').click()">Get Started</button>
+                        <a href="mailto:buithanhcuong2006@gmail.com" class="btn btn-secondary">ping.system()</a>
+                    </div>
+                </div>
+
+                <!-- Trình diễn bảng điều khiển nhà phát triển (Bên phải) -->
+                <div class="scanner-viewport">
+                    <div class="viewport-header">
+                        <div class="window-dots">
+                            <span class="w-dot red"></span>
+                            <span class="w-dot yellow"></span>
+                            <span class="w-dot green"></span>
+                        </div>
+                        <span class="viewport-title">aether_developer_dashboard.app</span>
+                        <span class="viewport-status">STATUS // ONLINE</span>
+                    </div>
+                    <div class="scanner-grid">
+                        <!-- Ảnh xem trước bảng điều khiển -->
+                        <img src="public/image/hero_apple_preview.png" alt="Developer Dashboard" class="developer-sketch-img">
+                    </div>
+                    <div class="viewport-footer">
+                        <span class="scan-label">Aether Dev Studio</span>
+                        <span class="scan-fps">RENDERER // METAL_2D</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phần danh sách thẻ xếp chồng (Thành phần hồ sơ năng lực) -->
+            <section class="stack-section">
+                <div class="section-title-wrap">
+                    <span class="section-num">DECK INDEX</span>
+                    <h2 class="section-title">System Deck</h2>
+                    <p class="section-subtitle">Navigate through stacked glass cards below or execute terminal commands to pull them forward.</p>
+                </div>
+
+                <div class="stack-container">
+                    
+                    <!-- Thẻ 1: Hồ sơ cá nhân (Bản thân) -->
+                    <div class="deck-card card-identity active" id="card-identity" data-index="1" style="--rotation: -1.5deg; --z-index: 4;">
+                        <div class="card-header">
+                            <span class="card-tag">OVERVIEW // 01</span>
+                            <span class="card-label">Identity Profile</span>
+                            <div class="card-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="identity-grid">
+                                <div class="identity-polaroid">
+                                    <div class="polaroid-img-wrap">
+                                        <img src="public/image/fitting_room_legend.jpg" alt="Developer Profile" class="card-icon-img">
+                                    </div>
+                                    <div class="polaroid-label">AETHER DEV</div>
+                                </div>
+                                <div class="identity-main">
+                                    <div class="card-subtitle">CORE STATS</div>
+                                    <div class="metrics-grid">
+                                        <div class="metric-item">
+                                            <div class="metric-val">12+</div>
+                                            <div class="metric-lbl">SHIPPED APPS</div>
+                                        </div>
+                                        <div class="metric-item">
+                                            <div class="metric-val">99%</div>
+                                            <div class="metric-lbl">API UPTIME</div>
+                                        </div>
+                                        <div class="metric-item">
+                                            <div class="metric-val">1.2M+</div>
+                                            <div class="metric-lbl">LINES COMPILED</div>
+                                        </div>
+                                    </div>
+                                    <hr class="card-divider">
+                                    <div class="card-philosophy">
+                                        <p class="ph-title">MISSION OBJECTIVE</p>
+                                        <p class="ph-text">"Creating highly responsive, modular, and visually compelling web applications. Bridging high-fidelity design with scalable codebases."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thẻ 2: Quy trình làm việc -->
+                    <div class="deck-card card-process" id="card-process" data-index="2" style="--rotation: 2deg; --z-index: 3;">
+                        <div class="card-header">
+                            <span class="card-tag">OVERVIEW // 02</span>
+                            <span class="card-label">Work Methodology</span>
+                            <div class="card-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-main-title">Methodology</h3>
+                            <div class="process-list">
+                                <div class="process-item active">
+                                    <div class="proc-num">01</div>
+                                    <div class="proc-details">
+                                        <div class="proc-title">Discovery</div>
+                                        <div class="proc-desc">Analyze system parameters, identify user goals, and set target performance baselines.</div>
+                                    </div>
+                                </div>
+                                <div class="process-item">
+                                    <div class="proc-num">02</div>
+                                    <div class="proc-details">
+                                        <div class="proc-title">Architecture</div>
+                                        <div class="proc-desc">Formulate clean data structures, component hierarchies, and interactive schemas.</div>
+                                    </div>
+                                </div>
+                                <div class="process-item">
+                                    <div class="proc-num">03</div>
+                                    <div class="proc-details">
+                                        <div class="proc-title">Interface Design</div>
+                                        <div class="proc-desc">Translate logical flows into aesthetic interfaces, utilizing glass effects and responsive typography.</div>
+                                    </div>
+                                </div>
+                                <div class="process-item">
+                                    <div class="proc-num">04</div>
+                                    <div class="proc-details">
+                                        <div class="proc-title">Performance Code</div>
+                                        <div class="proc-desc">Compile clean, modular, and optimized front-end script, ensuring fast rendering speeds.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thẻ 3: Kỹ năng công nghệ -->
+                    <div class="deck-card card-tech" id="card-tech" data-index="3" style="--rotation: -1deg; --z-index: 2;">
+                        <div class="card-header">
+                            <span class="card-tag">OVERVIEW // 03</span>
+                            <span class="card-label">Tech Stack Diagnostics</span>
+                            <div class="card-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-main-title text-dark">Core Stack</h3>
+                            <div class="skills-container">
+                                <div class="skill-bar-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">HTML5 / CSS3 / Grid Layouts</span>
+                                        <span class="skill-pct">95%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill" style="--target-width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">JavaScript (ES6+) / TypeScript</span>
+                                        <span class="skill-pct">90%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill" style="--target-width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Three.js / WebGL / Canvas API</span>
+                                        <span class="skill-pct">85%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill" style="--target-width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React / Next.js Frameworks</span>
+                                        <span class="skill-pct">88%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill" style="--target-width: 88%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diagnostic-console" id="skills-diagnostic">
+                                <span class="diag-status" id="diag-status">STATUS // READY</span>
+                                <span class="diag-action" id="diag-action">[ SYSTEM DIAGNOSTIC SECURE ]</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thẻ 4: Dự án tiêu biểu -->
+                    <div class="deck-card card-projects" id="card-projects" data-index="4" style="--rotation: 2.5deg; --z-index: 1;">
+                        <div class="card-header">
+                            <span class="card-tag">OVERVIEW // 04</span>
+                            <span class="card-label">Selected Works</span>
+                            <div class="card-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="project-brutalist-layout">
+                                <!-- Cột trái: Thông tin dự án & Vòng xoay điều khiển -->
+                                <div class="dial-metadata">
+                                    <div class="dial-meta-tag" id="dial-meta-index">PROJECT 01 // 03</div>
+                                    <h4 class="dial-project-title" id="dial-project-title">SKETCH PORTFOLIO ENGINE</h4>
+                                    <p class="dial-project-desc" id="dial-project-desc">This modular HTML5/CSS3 portfolio using hand-drawn ink doodles, SVG filters, and keyboard terminal listeners.</p>
+                                    <div class="dial-project-tags" id="dial-project-tags">
+                                        <span class="p-tag">HTML5 Canvas</span>
+                                        <span class="p-tag">SVG Filters</span>
+                                        <span class="p-tag">Parchment UI</span>
+                                    </div>
+                                    
+                                    <!-- Bộ điều khiển vòng xoay -->
+                                    <div class="dial-wheel-control">
+                                        <button class="dial-btn dial-prev" id="dial-prev" aria-label="Previous project">←</button>
+                                        <div class="dial-wheel-hud">
+                                            <div class="dial-wheel-spin" id="dial-wheel-spin">
+                                                <span class="dial-marker" style="--angle: 0deg;">01</span>
+                                                <span class="dial-marker" style="--angle: 120deg;">02</span>
+                                                <span class="dial-marker" style="--angle: 240deg;">03</span>
+                                            </div>
+                                        </div>
+                                        <button class="dial-btn dial-next" id="dial-next" aria-label="Next project">→</button>
+                                    </div>
+                                </div>
+ 
+                                <!-- Cột phải: Khung trình duyệt macOS mô phỏng nằm ngang -->
+                                <a href="https://github.com/cuongbui/sketch-portfolio" target="_blank" class="project-rect-link" id="project-git-link">
+                                    <div class="project-rect-frame" id="project-rect-frame">
+                                        <div class="project-window-header">
+                                            <div class="window-dots">
+                                                <span class="w-dot red"></span>
+                                                <span class="w-dot yellow"></span>
+                                                <span class="w-dot green"></span>
+                                            </div>
+                                            <span class="project-window-title">safari</span>
+                                        </div>
+                                        <div class="git-overlay-icon">↗ VISIT GITHUB</div>
+                                        <img src="public/image/project_sketch_index.png" alt="Project Thumbnail" class="rect-project-img" id="dial-project-img">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Hộp Terminal dòng lệnh HUD -->
+        <footer class="hud-footer">
+            <div class="terminal-container">
+                <div class="terminal-bar">
+                    <span class="term-lbl">TERMINAL CONSOLE // SYSTEM_CONTROL</span>
+                    <button class="term-toggle-btn" id="term-toggle">EXPAND [^]</button>
+                </div>
+                <div class="terminal-window" id="terminal-window">
+                    <div class="terminal-output" id="terminal-output">
+                        <div class="term-line green">System initialized. Type '/help' to list available commands.</div>
+                        <div class="term-line">Ready to receive commands. Input prompt active.</div>
+                    </div>
+                    <form class="terminal-input-wrap" id="terminal-form">
+                        <span class="prompt">guest@cuongbui:~#</span>
+                        <input type="text" id="terminal-input" autocomplete="off" placeholder="type /help or /skills..." aria-label="Terminal Input">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-meta">
+                <span class="copyright">©2026 CUONG BUI. ALL RIGHTS COMPILING.</span>
+                <span class="sys-sig">DIGITAL SIGNATURE: 0x8F9A34CD</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Nhập mã nguồn JavaScript -->
+    <script type="module" src="public/main.js"></script>
+</body>
+</html>
