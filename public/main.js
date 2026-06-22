@@ -83,19 +83,19 @@ function triggerSkillsDiagnostics() {
 const projectsData = [
     {
         index: "PROJECT 01 // 03",
-        title: "SKETCH PORTFOLIO ENGINE",
-        desc: "This modular HTML5/CSS3 portfolio using hand-drawn ink doodles, SVG filters, and keyboard terminal listeners.",
+        title: "AETHER PORTFOLIO DECK",
+        desc: "This minimalist Apple-style portfolio built with HTML5, Vanilla CSS, and jQuery. Featuring frosted glass cards, terminal controller, and custom theme switches.",
         image: "public/image/project_sketch_index.png",
-        gitLink: "https://github.com/cuongbui/sketch-portfolio",
-        tags: ["HTML5 Canvas", "SVG Filters", "Parchment UI"]
+        gitLink: "https://github.com/btcuong2006-byte/BuiThanhCuong-Portfolio",
+        tags: ["HTML5", "Vanilla CSS", "jQuery"]
     },
     {
         index: "PROJECT 02 // 03",
-        title: "AURA STYLES STOREFRONT",
-        desc: "Minimalist, premium ecommerce front-end layout featuring strict grid structures, fine borders, and custom CSS page transitions.",
+        title: "TROPLUS",
+        desc: "A modern platform built with cutting-edge technologies, featuring a clear, transparent, and secure role-based authorization system.",
         image: "public/image/project_aura_index.png",
-        gitLink: "https://github.com/cuongbui/aura-storefront",
-        tags: ["HTML5", "Vanilla CSS", "Grid Layout"]
+        gitLink: "https://github.com/btcuong2006-byte/TroPlus",
+        tags: ["Laravel", "Tailwind CSS", "RBAC Auth"]
     },
     {
         index: "PROJECT 03 // 03",
