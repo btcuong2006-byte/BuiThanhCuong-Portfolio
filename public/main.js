@@ -1,6 +1,6 @@
-// ==========================================================================
 // 1. TƯƠNG TÁC VÀ ĐIỀU HƯỚNG BỘ THẺ XẾP CHỒNG
-// ==========================================================================
+// 
+
 const $cards = $('.deck-card');
 
 function activateCard(clickedCard) {
@@ -50,9 +50,9 @@ $cards.on('click', function() {
     activateCard(this);
 });
 
-// ==========================================================================
 // 2. BỘ TẢI CHẨN ĐOÁN KỸ NÀNG TRÊN THẺ
-// ==========================================================================
+// 
+
 let diagTimeout1 = null;
 let diagTimeout2 = null;
 
@@ -77,9 +77,9 @@ function triggerSkillsDiagnostics() {
     }, 1200);
 }
 
-// ==========================================================================
 // 3. BỘ TRÌNH CHIẾU DỰ ÁN CAROUSEL
-// ==========================================================================
+// 
+
 const projectsData = [
     {
         index: "PROJECT 01 // 03",
@@ -173,9 +173,9 @@ $('#dial-next').on('click', (e) => {
     updateProject(currentProjectIndex + 1);
 });
 
-// ==========================================================================
 // 4. BỘ CHUYỂN ĐỔI CHỦ ĐỀ SÁNG/TỐI
-// ==========================================================================
+// 
+
 const $themeToggle = $('#theme-toggle');
 const $themeIcon = $themeToggle.find('.toggle-icon');
 
@@ -197,9 +197,9 @@ $themeToggle.on('click', () => {
     addTerminalLine(isLight ? 'Theme switched to DARK mode.' : 'Theme switched to LIGHT mode.', 'green');
 });
 
-// ==========================================================================
 // 5. LIÊN KẾT ĐIỀU HƯỚNG THANH HUD HEADER
-// ==========================================================================
+// 
+
 $('.nav-link').on('click', function(e) {
     e.preventDefault();
     const $link = $(this);
@@ -220,9 +220,9 @@ $('.nav-link').on('click', function(e) {
     }
 });
 
-// ==========================================================================
 // 6. ĐỒNG HỒ SỐ CHẠY TRỰC TIẾP
-// ==========================================================================
+// 
+
 function updateTime() {
     const $liveTime = $('#live-time');
     if (!$liveTime.length) return;
@@ -240,9 +240,9 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
-// ==========================================================================
 // 7. TERMINAL HỆ THỐNG TƯƠNG TÁC (Ngăn kéo Terminal)
-// ==========================================================================
+// 
+
 const $termToggle = $('#term-toggle');
 const $termWindow = $('#terminal-window');
 const $termForm = $('#terminal-form');
