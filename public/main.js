@@ -85,7 +85,7 @@ const projectsData = [
         index: "PROJECT 01 // 03",
         title: "AETHER PORTFOLIO DECK",
         desc: "This minimalist Apple-style portfolio built with HTML5, Vanilla CSS, and jQuery. Featuring frosted glass cards, terminal controller, and custom theme switches.",
-        image: "public/image/project_sketch_index.png",
+        image: "public/image/1.png",
         gitLink: "https://github.com/btcuong2006-byte/BuiThanhCuong-Portfolio",
         tags: ["HTML5", "Vanilla CSS", "jQuery"]
     },
@@ -93,8 +93,8 @@ const projectsData = [
         index: "PROJECT 02 // 03",
         title: "TROPLUS",
         desc: "A modern platform built with cutting-edge technologies, featuring a clear, transparent, and secure role-based authorization system.",
-        image: "public/image/project_aura_index.png",
-        gitLink: "https://github.com/btcuong2006-byte/TroPlus",
+        image: "public/image/2.png",
+        gitLink: "https://github.com/btcuong2006-byte/DEAN-TroPlus",
         tags: ["Laravel", "Tailwind CSS", "RBAC Auth"]
     },
     {
